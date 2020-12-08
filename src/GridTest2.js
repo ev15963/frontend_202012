@@ -24,28 +24,31 @@ class GridTest2 extends Component {
           <Gird item lg={3} md={4} sm={6} xs={12}>
             <Paper className="{classes.paper}">
               Content 1
-              {/* .img_1{
-                width: 300px;
-                height: 150px;
-                overflow: hidden;
-              }
-              <img
-                class="img_1"
-                src="https://media.vlpt.us/images/jerrynim_/post/a9845d85-0398-4808-8311-50acc9e0554a/11월.jpg?w=640"
-              /> */}
+              <a href="https://velog.io/@hyounglee/wdconf2020">
+                <img
+                  className="img"
+                  src="https://media.vlpt.us/images/jerrynim_/post/a9845d85-0398-4808-8311-50acc9e0554a/11월.jpg"
+                />
+              </a>
+            </Paper>
+          </Gird>
+          <Gird item lg={3} md={4} sm={6} xs={12}>
+            <Paper className="{classes.paper}">
+              Content 2
               <img
                 className="img"
-                src="https://media.vlpt.us/images/jerrynim_/post/a9845d85-0398-4808-8311-50acc9e0554a/11월.jpg"
-                width="460"
-                height="345"
+                src="https://media.vlpt.us/images/hyounglee/post/cc374d2f-0f4e-472f-9d07-4d1f7e8727ca/til7.png"
               />
             </Paper>
           </Gird>
           <Gird item lg={3} md={4} sm={6} xs={12}>
-            <Paper className="{classes.paper}">Content 2</Paper>
-          </Gird>
-          <Gird item lg={3} md={4} sm={6} xs={12}>
-            <Paper className="{classes.paper}">Content 3</Paper>
+            <Paper className="{classes.paper}">
+              Content 3
+              <img
+                className="img"
+                src="https://media.vlpt.us/images/hyounglee/post/cc374d2f-0f4e-472f-9d07-4d1f7e8727ca/til7.png"
+              />
+            </Paper>
           </Gird>
           <Gird item lg={3} md={4} sm={6} xs={12}>
             <Paper className="{classes.paper}">Content 4</Paper>
