@@ -91,10 +91,10 @@ function Users() {
   return (
     <div>
       <hr />
-      <h2>
-        사용자 페이지
-        <GridTest2 />
-      </h2>
+      <h2>사용자 개인 페이지</h2>
+      <userPage />
+      <h2>콘텐츠</h2>
+      <GridTest2 />
     </div>
   );
 }

@@ -23,18 +23,30 @@ class GridTest2 extends Component {
         <Gird container spacing={3}>
           <Gird item lg={3} md={4} sm={6} xs={12}>
             <Paper className="{classes.paper}">
-              Content 1
-              <a href="https://velog.io/@hyounglee/wdconf2020">
-                <img
-                  className="img"
-                  src="https://media.vlpt.us/images/jerrynim_/post/a9845d85-0398-4808-8311-50acc9e0554a/11월.jpg"
-                />
-              </a>
+              <a href="https://weather.naver.com">날씨</a>
+
+              <div class="weather_area">
+                <strong class="current">
+                  <span class="blind">현재 온도</span>-1
+                  <span class="degree">°</span>
+                </strong>
+                <p class="summary">
+                  어제보다 1 ° 높아요<span class="weather">맑음</span>
+                </p>
+                <dl class="summary_list">
+                  <dt class="term">강수확률</dt>
+                  <dd class="desc">0%</dd>
+                  <dt class="term">습도</dt>
+                  <dd class="desc">50%</dd>
+                  <dt class="term">바람(서풍)</dt>
+                  <dd class="desc">1m/s</dd>
+                </dl>
+              </div>
             </Paper>
           </Gird>
           <Gird item lg={3} md={4} sm={6} xs={12}>
             <Paper className="{classes.paper}">
-              Content 2
+              증권
               <img
                 className="img"
                 src="https://media.vlpt.us/images/hyounglee/post/cc374d2f-0f4e-472f-9d07-4d1f7e8727ca/til7.png"
@@ -43,7 +55,7 @@ class GridTest2 extends Component {
           </Gird>
           <Gird item lg={3} md={4} sm={6} xs={12}>
             <Paper className="{classes.paper}">
-              Content 3
+              뉴스
               <img
                 className="img"
                 src="https://media.vlpt.us/images/hyounglee/post/cc374d2f-0f4e-472f-9d07-4d1f7e8727ca/til7.png"
@@ -51,16 +63,16 @@ class GridTest2 extends Component {
             </Paper>
           </Gird>
           <Gird item lg={3} md={4} sm={6} xs={12}>
-            <Paper className="{classes.paper}">Content 4</Paper>
+            <Paper className="{classes.paper}">영화 (순위)</Paper>
           </Gird>
           <Gird item lg={3} md={4} sm={6} xs={12}>
-            <Paper className="{classes.paper}">Content 5</Paper>
+            <Paper className="{classes.paper}">웹툰</Paper>
           </Gird>
           <Gird item lg={3} md={4} sm={6} xs={12}>
-            <Paper className="{classes.paper}">Content 6</Paper>
+            <Paper className="{classes.paper}">velog</Paper>
           </Gird>
           <Gird item lg={3} md={4} sm={6} xs={12}>
-            <Paper className="{classes.paper}">Content 7</Paper>
+            <Paper className="{classes.paper}">쇼핑(카카오메이커스)</Paper>
           </Gird>
           <Gird item lg={3} md={4} sm={6} xs={12}>
             <Paper className="{classes.paper}">Content 8</Paper>
