@@ -21,10 +21,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {isPC && <p>isPC</p>}
-        {isTablet && <p>isTablet</p>}
-        {isMobile && <p>isMobile</p>}
-
         <nav>
           <ul>
             <li>
@@ -38,7 +34,6 @@ function App() {
             </li>
           </ul>
         </nav>
-
         {/** <switch>는 하위 <Route>들을 살펴보고 현재 URL과 일치하는 첫 번째 경로를 렌더링합니다. */}
         <Switch>
           <Route path="/about">
@@ -51,6 +46,11 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <div class="footer">
+          {isPC && <p>PC화면입니다.</p>}
+          {isTablet && <p>Tablet화면입니다.</p>}
+          {isMobile && <p>Mobile화면입니다.</p>}
+        </div>
       </div>
     </Router>
   );

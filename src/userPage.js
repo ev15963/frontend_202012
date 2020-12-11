@@ -1,3 +1,1 @@
-improt "./userPage.css";
-
-<
+import "./userPage.css";
