@@ -1,4 +1,7 @@
 {
+  "bugs" : {
+    "url": "https://ev15963.github.io/frontend_202012/issues"
+  },
   "homepage": "https://ev15963.github.io/frontend_202012",
   "name": "frontend_202012",
   "version": "0.1.0",
