@@ -46,7 +46,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-        <div class="footer">
+        <div className="footer">
           {isPC && <p>PC화면입니다.</p>}
           {isTablet && <p>Tablet화면입니다.</p>}
           {isMobile && <p>Mobile화면입니다.</p>}
@@ -57,7 +57,7 @@ function App() {
 }
 function Home() {
   //ip 주소 변수 선언
-  const [ip, setIp] = useState("");
+  const [ip, setIp] = useState("IPaddress");
 
   //ip 주소 값을 설정
   function callback(data) {
