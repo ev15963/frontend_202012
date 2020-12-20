@@ -14,6 +14,7 @@ export default function customAxios(url, callback) {
   })
     .then(function (response) {
       callback(response.data);
+      console.log(response + " response");
     })
     .catch((e) => {
       console.error(e + " console err");
