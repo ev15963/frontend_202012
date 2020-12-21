@@ -18,6 +18,13 @@ function App() {
     query: "(max-width: 767px)",
   });
 
+  // // This should already be declared in your API file
+  // var app = express();
+
+  // // ADD THIS
+  // var cors = require("cors");
+  // app.use(cors());
+
   return (
     <Router>
       <div className="App">
