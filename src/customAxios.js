@@ -4,6 +4,7 @@ export default function customAxios(url, callback) {
   axios({
     url: "/api" + url,
     method: "post",
+    responseType: "type",
 
     /**
      * 개발 환경에서의 크료스 도메인 이슈를 해결하기 위한 코드로
@@ -19,5 +20,8 @@ export default function customAxios(url, callback) {
     .catch((e) => {
       console.error(e + " console err");
       console.log(e + " console err");
+    })
+    .then(() => {
+      //항상실행
     });
 }
