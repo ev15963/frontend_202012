@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import GridTest from "./GridTest";
 import GridTest2 from "./GridTest2";
+import Bye from "./bye";
 
 function App() {
   const isPC = useMediaQuery({
@@ -81,6 +82,7 @@ function About() {
   return (
     <div>
       <hr />
+      <Bye />
       <h2>
         소개 페이지
         <GridTest />
