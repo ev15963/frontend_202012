@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 function Bye() {
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("dddd");
   useEffect(() => {
-    fetch("/api/bye")
+    fetch("/api/bye", { method: "POST" })
       .then((response) => response.text())
       .then((message) => {
         setMessage(message);
