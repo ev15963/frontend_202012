@@ -72,9 +72,7 @@ function Home() {
   }, []);
 
   return (
-    //<form onSubmit={ip} method="post">
     <header className="App-header">이 기기의 IP주소는 바로 {ip}입니다</header>
-    //</form>
   );
 }
 
