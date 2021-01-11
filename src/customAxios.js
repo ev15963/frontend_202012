@@ -2,7 +2,6 @@ import axios from "axios"; //엑시오스
 
 export default function customAxios(url, callback) {
   axios({
-    method: "post",
     url: "/api" + url,
     responseType: "type", //type -> stream
     responseEncoding: "utf-8",

@@ -58,7 +58,7 @@ function App() {
 }
 function Home() {
   //ip 주소 변수 선언
-  const [ip, setIp] = useState("IPaddress");
+  const [ip, setIp] = useState("IPaddresss");
 
   //ip 주소 값을 설정
   function callback(data) {
