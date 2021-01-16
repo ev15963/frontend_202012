@@ -7,6 +7,7 @@ import { useMediaQuery } from "react-responsive";
 import GridTest from "./GridTest";
 import GridTest2 from "./GridTest2";
 import Bye from "./bye";
+import Button1 from "./button";
 
 function App() {
   const isPC = useMediaQuery({
@@ -93,6 +94,7 @@ function Users() {
   return (
     <div>
       <hr />
+      <Button1 />
       <h2>사용자 개인 페이지</h2>
       <userPage />
       <h2>콘텐츠</h2>

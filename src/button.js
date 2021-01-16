@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function button() {
+function Button1() {
   const [count, setCount] = useState(0);
 
   return (
@@ -11,4 +11,4 @@ function button() {
   );
 }
 
-export default button;
+export default Button1;
