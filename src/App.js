@@ -8,6 +8,7 @@ import GridTest from "./GridTest";
 import GridTest2 from "./GridTest2";
 import Bye from "./bye";
 import Button1 from "./button";
+import axios from "axios";
 
 function App() {
   const isPC = useMediaQuery({
@@ -61,16 +62,27 @@ function Home() {
   //ip 주소 변수 선언
   const [ip, setIp] = useState("IPaddresss");
 
-  //ip 주소 값을 설정
-  function callback(data) {
-    setIp(data);
-  }
+  // //ip 주소 값을 설정
+  // function callback(data) {
+  //   setIp(data);
+  // }
 
-  //첫번째 렌더릉을 다 마친 후 실행
-  useEffect(() => {
-    //클라이언트의 ip주소를 알아내는 백엔드ㄹ의 함수를 호출
-    customAxios("/ip", callback);
-  }, []);
+  // //첫번째 렌더릉을 다 마친 후 실행
+  // useEffect(() => {
+  //   //클라이언트의 ip주소를 알아내는 백엔드ㄹ의 함수를 호출
+  //   customAxios("/ip", callback);
+  // }, []);
+
+  const url = "http://localhost:8282/backend_202012-1/api/ip";
+  axios
+    .get(url)
+    .then(function (response) {
+      setIp(response.data);
+      console.log("성공 : " + response.data);
+    })
+    .catch(function (e) {
+      console.log("실패 : " + e + "setIp : " + setIp);
+    });
 
   return (
     <header className="App-header">이 기기의 IP주소는 바로 {ip}입니다</header>
