@@ -15,7 +15,7 @@ export default function customAxios(url, callback) {
     withCredentials: true,
   })
     .then(function (response) {
-      callback(response.data());
+      callback(response.text());
       console.log(response + " response");
     })
     .catch((e) => {
