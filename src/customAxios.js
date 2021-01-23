@@ -5,7 +5,7 @@ export default function customAxios(url, callback) {
     //"http://localhost:8282/backend_202012-1/api" + url, {
     //headers: { "Access-Control-Allow-Origin": "*" },
     url: "/backend_202012-1/api" + url,
-    method: "get",
+    method: "post",
 
     /**
      * 개발 환경에서의 크료스 도메인 이슈를 해결하기 위한 코드로
