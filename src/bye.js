@@ -4,7 +4,7 @@ import "./App.css";
 function Bye() {
   const [message, setMessage] = useState("dddd");
   useEffect(() => {
-    fetch("/backend_202012-1/api/bye")
+    fetch("/backend_202012-1/api/bye", { method: "post" })
       .then((response) => response.text())
       .then((message) => {
         setMessage(message);

@@ -8,7 +8,6 @@ import GridTest from "./GridTest";
 import GridTest2 from "./GridTest2";
 import Bye from "./bye";
 import Button1 from "./button";
-import axios from "axios";
 
 function App() {
   const isPC = useMediaQuery({
@@ -39,14 +38,14 @@ function App() {
         </nav>
         {/** <switch>는 하위 <Route>들을 살펴보고 현재 URL과 일치하는 첫 번째 경로를 렌더링합니다. */}
         <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
           <Route path="/about">
             <About />
           </Route>
           <Route path="/users">
             <Users />
-          </Route>
-          <Route path="/">
-            <Home />
           </Route>
         </Switch>
         <div className="footer">
@@ -72,17 +71,6 @@ function Home() {
     //클라이언트의 ip주소를 알아내는 백엔드ㄹ의 함수를 호출
     customAxios("/ip", callback);
   }, []);
-
-  // const url = "http://localhost:8282/backend_202012-1/api/ip";
-  // axios
-  //   .get(url)
-  //   .then(function (response) {
-  //     setIp(response.data);
-  //     console.log("성공 : " + response.data);
-  //   })
-  //   .catch(function (e) {
-  //     console.log("실패 : " + e + "setIp : " + setIp);
-  //   });
 
   return (
     <header className="App-header">이 기기의 IP주소는 바로 {ip}입니다</header>
