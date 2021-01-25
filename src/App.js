@@ -8,6 +8,7 @@ import GridTest from "./GridTest";
 import GridTest2 from "./GridTest2";
 import Bye from "./bye";
 import Button1 from "./button";
+import axios from "axios";
 
 function App() {
   const isPC = useMediaQuery({
@@ -26,7 +27,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <a href <Link to="/">홈</Link>
+              <Link to="/">홈</Link>
             </li>
             <li>
               <Link to="/about">소개</Link>
@@ -44,9 +45,8 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
+          <Route path="/users"></Route>
+          <Users />
         </Switch>
         <div className="footer">
           {isPC && <p>PC화면입니다.</p>}
