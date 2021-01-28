@@ -44,8 +44,9 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users"></Route>
-          <Users />
+          <Route path="/users">
+            <Users />
+          </Route>
         </Switch>
         <div className="footer">
           {isPC && <p>PC화면입니다.</p>}
