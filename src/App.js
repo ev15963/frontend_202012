@@ -38,14 +38,14 @@ function App() {
         </nav>
         {/** <switch>는 하위 <Route>들을 살펴보고 현재 URL과 일치하는 첫 번째 경로를 렌더링합니다. */}
         <Switch>
-          <Route path="/">
-            <Home />
+          <Route path="/users">
+            <Users />
           </Route>
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
         <div className="footer">
