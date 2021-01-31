@@ -23,19 +23,22 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">홈</Link>
-            </li>
-            <li>
-              <Link to="/about">소개</Link>
-            </li>
-            <li>
-              <Link to="/users">사용자</Link>
-            </li>
-          </ul>
-        </nav>
+        <div className="menu">
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">홈</Link>
+              </li>
+              <li>
+                <Link to="/about">소개</Link>
+              </li>
+              <li>
+                <Link to="/users">사용자</Link>
+              </li>
+            </ul>
+          </nav>
+          <hr />
+        </div>
         {/** <switch>는 하위 <Route>들을 살펴보고 현재 URL과 일치하는 첫 번째 경로를 렌더링합니다. */}
         <Switch>
           <Route path="/users">
