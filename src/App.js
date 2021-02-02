@@ -8,6 +8,8 @@ import GridTest from "./GridTest";
 import GridTest2 from "./GridTest2";
 import Bye from "./bye";
 import Button1 from "./button";
+import * as React from "react";
+import { View, Text } from "react-native";
 
 function App() {
   const isPC = useMediaQuery({
