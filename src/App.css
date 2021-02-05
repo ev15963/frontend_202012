@@ -40,13 +40,14 @@
   background-color: pink;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding: 0 2em;
+  width: 100%;
   height: 75px;
   z-index: 2;
 }
@@ -64,7 +65,7 @@ nav ul li {
   display: inline; /*  세로나열을 가로나열로 변경 */
   border-left: 1px solid #999; /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */
   font: bold 12px; /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
-  padding: 0 10px; /* 각 메뉴 간격 */
+  padding: 0 100px; /* 각 메뉴 간격 */
   text-align: center; /* 글자 가운데 지정*/
   background-color: red;
 }
