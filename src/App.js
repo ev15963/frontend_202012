@@ -37,12 +37,18 @@ function App() {
               <li>
                 <Link to="/users">사용자</Link>
               </li>
+              <li>
+                <Link to="/menu4">4번째</Link>
+              </li>
             </ul>
           </nav>
           <hr />
         </div>
         {/** <switch>는 하위 <Route>들을 살펴보고 현재 URL과 일치하는 첫 번째 경로를 렌더링합니다. */}
         <Switch>
+          <Route path="/menu4">
+            <Users />
+          </Route>
           <Route path="/users">
             <Users />
           </Route>
