@@ -38,7 +38,7 @@ function App() {
                 <Link to="/users">사용자</Link>
               </li>
               <li>
-                <Link to="/menu4">4번째</Link>
+                <Link to="/menu4">new</Link>
               </li>
             </ul>
           </nav>
