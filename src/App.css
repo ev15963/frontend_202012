@@ -73,6 +73,10 @@ nav ul li:first-child {
   border-left: none;
 } /* 메뉴 분류중 제일 왼쪽의 "|"는 삭제 */
 
+div {
+  padding-top: 23px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
