@@ -42,9 +42,8 @@ function App() {
               </li>
             </ul>
           </nav>
-          <hr />
         </div>
-        <div className="back_menu">
+        {/* <div className="back_menu">
           <nav>
             <ul>
               <li>
@@ -52,7 +51,7 @@ function App() {
               </li>
             </ul>
           </nav>
-        </div>
+        </div> */}
         {/** <switch>는 하위 <Route>들을 살펴보고 현재 URL과 일치하는 첫 번째 경로를 렌더링합니다. */}
         <Switch>
           <Route path="/menu4">

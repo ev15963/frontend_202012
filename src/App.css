@@ -51,6 +51,10 @@
   height: 75px;
   z-index: 2;
 }
+
+/* .back_menu {
+  flex-direction: row-reverse;
+} */
 /* div.App nav ul li */
 /* nav tag */
 /* .menu {
