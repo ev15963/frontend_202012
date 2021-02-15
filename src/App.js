@@ -40,7 +40,9 @@ function App() {
               <li>
                 <Link to="/menu4">new</Link>
               </li>
-              <li></li>
+              <li>
+                <Link to="/menu5">new</Link>
+              </li>
             </ul>
           </nav>
         </div>
